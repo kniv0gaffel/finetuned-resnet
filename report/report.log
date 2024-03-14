@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2024.3.11)  12 MAR 2024 19:19
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2024.3.11)  14 MAR 2024 18:34
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -907,7 +907,20 @@ runsystem(which pygmentize && touch report.aex)...executed.
 
 runsystem(rm report.aex)...executed.
 
- (./report.aux)
+ (./report.aux
+
+LaTeX Warning: Label `fig:training' multiply defined.
+
+
+LaTeX Warning: Label `fig:featuremaps' multiply defined.
+
+
+LaTeX Warning: Label `fig:featuremaps' multiply defined.
+
+
+LaTeX Warning: Label `fig:featuremaps' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
@@ -921,8 +934,7 @@ LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
 5.
-
-(/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 55.
@@ -988,8 +1000,8 @@ Pagestretch: 0.0pt
 CUTED [output]: 0.0pt
 CUTED [leftcolumn badness]: 0
 CUTED [rightcolumn badness]: 0
-File: ../training.png Graphic file (type bmp)
-<../training.png>
+File: training.png Graphic file (type bmp)
+<training.png>
 
 ./report.tex:103: LaTeX Error: \begin{figure*} on input line 98 ended by \end{f
 igure}.
@@ -1004,29 +1016,32 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[1
 
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 104.
 
-]
-File: ../original-image.png Graphic file (type bmp)
-<../original-image.png>
+File: training_only_freeze_conv.png Graphic file (type bmp)
+<training_only_freeze_conv.png>
 
-
-./report.tex:114: LaTeX Error: \begin{figure*} on input line 109 ended by \end{
+./report.tex:109: LaTeX Error: \begin{figure*} on input line 104 ended by \end{
 figure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 \end{figure}
+l.109 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-File: ../featuremaps.png Graphic file (type bmp)
-<../featuremaps.png>
+[1
+
+]
+File: original-image.png Graphic file (type bmp)
+<original-image.png>
+
 
 ./report.tex:120: LaTeX Error: \begin{figure*} on input line 115 ended by \end{
 figure}.
@@ -1041,20 +1056,100 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+File: featuremaps.png Graphic file (type bmp)
+<featuremaps.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+./report.tex:126: LaTeX Error: \begin{figure*} on input line 121 ended by \end{
+figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 \end{figure}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+File: best_worst_first_class.png Graphic file (type bmp)
+<best_worst_first_class.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+./report.tex:133: LaTeX Error: \begin{figure*} on input line 128 ended by \end{
+figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133 \end{figure}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+File: best_worst_second_class.png Graphic file (type bmp)
+<best_worst_second_class.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+./report.tex:141: LaTeX Error: \begin{figure*} on input line 136 ended by \end{
+figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141 \end{figure}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+File: best_worst_sixth_class.png Graphic file (type bmp)
+<best_worst_sixth_class.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+./report.tex:149: LaTeX Error: \begin{figure*} on input line 144 ended by \end{
+figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 \end{figure}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 [2
 
+] [3
 
 ] (./report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26293 strings out of 478682
- 538783 string characters out of 5849665
- 1850018 words of memory out of 5000000
- 45973 multiletter control sequences out of 15000+600000
+ 26324 strings out of 478682
+ 539721 string characters out of 5849665
+ 1851018 words of memory out of 5000000
+ 46001 multiletter control sequences out of 15000+600000
  515741 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 87i,5n,119p,448b,354s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,5n,119p,448b,356s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on report.pdf (2 pages).
+Output written on report.pdf (3 pages).
