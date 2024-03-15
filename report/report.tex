@@ -88,20 +88,22 @@
 \begin{figure*}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{training.png}
-    \caption{Training of the model. The training loss is shown in blue, and the validation loss is shown in orange. The training accuracy is shown in green, and the validation accuracy is shown in red. The model was trained for 10 epochs.}
+    \caption{Training of the model. The training loss is shown in blue, and the validation 
+    loss is shown in orange. The model was trained for 100 epochs, but we can see that the model
+    starts to overfit moments after the first epoch. Indicating that the pre-trained model is
+    already very good at classifying the images.}
     \label{fig:training}
 \end{figure*}
 
-\begin{multicols}{2}
+% \begin{multicols}{2}
 The model used was a pre-trained ResNet18 model, which was fine-tuned on the ImageNet dataset
-using the PyTorch library. The model was fine-tuned with a linear head on top of the pre-trained
-model, and the learning rate was set to 0.001. The optimal learning rate and optimizer of those
-used were found to be the Adam optimizer with a learning rate of 0.001. The model was trained for
-10 epochs, and the learning rate was decayed by a factor of 0.1 after 5 epochs. The model was
-trained on a dataset
-Reported percentage of non-zero activations in the feature maps across 200 images
-[0.8, 0.7, 0.6, 0.5, 0.4]
-\end{multicols}
+using the PyTorch library. The model was fine-tuned with a modified linear head, which was
+replaced with a new linear layer with 6 output units. The model was trained using the cross-entropy
+loss function. The optimal learning rate and optimizer of those
+used were found to be the Adam optimizer with a learning rate of 0.001 with a weight decay of 0.0001.
+The model was trained for
+100 epochs. The final test accuracy was 91\% and the mean average precision (mAP) was 92\%. 
+% \end{multicols}
 
 \clearpage
 
@@ -115,7 +117,10 @@ Reported percentage of non-zero activations in the feature maps across 200 image
     \centering
     \includegraphics[width=1.0\textwidth]{featuremaps.png}
     \caption{Feature maps of five activations of the model, from 
-        shallow to deep layers top to bottom}
+        shallow to deep layers top to bottom. The percentage of non-zero activations in the 
+        feature maps across 200 images are
+        [0.83 0.77  0.52  0.51  0.46 ] top to bottom. So the shallow layers have more non-zero activations
+        than the deeper layers.}
     \label{fig:featuremaps}
 \end{figure*}
 

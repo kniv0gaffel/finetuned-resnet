@@ -1,0 +1,2 @@
+Test Loss: 0.25394 | Test Accuracy: 0.91% | Test mAP: 0.92%
+
