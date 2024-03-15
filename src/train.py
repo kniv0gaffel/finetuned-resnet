@@ -58,7 +58,7 @@ print("Starting training...\n\n")
 # ************ Training *******************************
 # ****************************************************
 
-epochs = 100
+epochs = 2
 train_loss = np.zeros(epochs)
 val_loss = np.zeros(epochs)
 val_accuracy = np.zeros(epochs)
