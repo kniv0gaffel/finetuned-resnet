@@ -1,4 +1,4 @@
-\documentclass[twocolumn]{article}[9pt]
+\documentclass{article}[9pt]
 % \usepackage[utf8]{inputenc}%
 % \usepackage{tikz}
 % \usepackage{cfr-lm}%
@@ -17,7 +17,7 @@
 \usepackage{xcolor}
 \usepackage{nccmath}
 \usepackage{lettrine}
-\usepackage{cuted}
+\usepackage{multicol}
 % \usepackage{fontawesome}
 \usemintedstyle{bw}
 \usepackage{hyperref}
@@ -55,7 +55,6 @@
 \begin{document}%
 % \maketitle%
 % \normalfont
-\begin{strip}%
     \begin{center}
         \textbf{\LARGE Image Classification with Fine-tuning of Pre-trained Models}
     \end{center}
@@ -85,66 +84,64 @@
 % perform an implicit form of feature selection, and demonstrate
 % a resulting insensitivity to irrelevant attributes.
 % \end{abstract}
-\end{strip}%
+
+\begin{figure*}[!ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{training.png}
+    \caption{Training of the model. The training loss is shown in blue, and the validation loss is shown in orange. The training accuracy is shown in green, and the validation accuracy is shown in red. The model was trained for 10 epochs.}
+    \label{fig:training}
+\end{figure*}
+
+\begin{multicols}{2}
 The model used was a pre-trained ResNet18 model, which was fine-tuned on the ImageNet dataset
 using the PyTorch library. The model was fine-tuned with a linear head on top of the pre-trained
 model, and the learning rate was set to 0.001. The optimal learning rate and optimizer of those
 used were found to be the Adam optimizer with a learning rate of 0.001. The model was trained for
 10 epochs, and the learning rate was decayed by a factor of 0.1 after 5 epochs. The model was
 trained on a dataset
-
-
-
-\begin{figure*}[!ht]
-    \centering
-    \includegraphics[width=0.8\textwidth]{training.png}
-    \caption{Example image}
-    \label{fig:training}
-\end{figure}
-\begin{figure*}[]
-    \centering
-    \includegraphics[width=0.8\textwidth]{training_only_freeze_conv.png}
-    \caption{Example image}
-    \label{fig:training}
-\end{figure}
-
 Reported percentage of non-zero activations in the feature maps across 200 images
 [0.8, 0.7, 0.6, 0.5, 0.4]
+\end{multicols}
 
-\begin{figure*}[h]
+\clearpage
+
+\begin{figure*}[!t]
     \centering
     \includegraphics[width=0.4\textwidth]{original-image.png}
-    \caption{Example image}
+    \caption{Original image}
     \label{fig:original-image}
-\end{figure}
+\end{figure*}
 \begin{figure*}[h]
     \centering
     \includegraphics[width=1.0\textwidth]{featuremaps.png}
-    \caption{Example image}
+    \caption{Feature maps of five activations of the model, from 
+        shallow to deep layers top to bottom}
     \label{fig:featuremaps}
-\end{figure}
+\end{figure*}
+
+\clearpage
 
 \begin{figure*}[h]
     \centering
     \includegraphics[width=1.0\textwidth]{best_worst_first_class.png}
-    \caption{Example image}
+    \caption{Ten best and worst images of the buildings class}
     \label{fig:featuremaps}
-\end{figure}
+\end{figure*}
 
 
 \begin{figure*}[h]
     \centering
     \includegraphics[width=1.0\textwidth]{best_worst_second_class.png}
-    \caption{Example image}
+    \caption{Ten best and worst images of the forest class}
     \label{fig:featuremaps}
-\end{figure}
+\end{figure*}
 
 
 \begin{figure*}[h]
     \centering
     \includegraphics[width=1.0\textwidth]{best_worst_sixth_class.png}
-    \caption{Example image}
+    \caption{Ten best and worst images of the street class}
     \label{fig:featuremaps}
-\end{figure}
+\end{figure*}
 
 \end{document}

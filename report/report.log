@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2024.3.11)  14 MAR 2024 18:34
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2024.3.11)  15 MAR 2024 10:26
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -820,26 +820,74 @@ Loading lettrine.cfg
 \LettrineDepth=\dimen300
 \Llist@everypar=\toks42
 )
-(/usr/share/texmf-dist/tex/latex/sttools/cuted.sty
-Package: cuted 2021/10/04 v2.0 Mixing onecolumn and twocolumn modes
-\At@ViperColsBreak=\toks43
-\preCutedStrip=\toks44
-\postCutedStrip=\toks45
-\cuted@@tempbox@a=\box81
-\cuted@@tempbox@c=\box82
-\cuted@@tempbox@var=\box83
-\hold@viper=\box84
-\@viper=\box85
-\cuted@@varbox@a=\box86
-\cuted@@varbox@c=\box87
-\cuted@@tempdim@spread=\dimen301
-\cuted@@tempdim@a=\dimen302
-\cuted@@tempdim@b=\dimen303
-\ht@hold@viper=\dimen304
-\ht@viper=\dimen305
-\var@@pagediscards@ht=\dimen306
-\stripsep=\skip63
-\viper@penalty=\count355
+(/usr/share/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
+\c@tracingmulticols=\count355
+\mult@box=\box81
+\multicol@leftmargin=\dimen301
+\c@unbalance=\count356
+\c@collectmore=\count357
+\doublecol@number=\count358
+\multicoltolerance=\count359
+\multicolpretolerance=\count360
+\full@width=\dimen302
+\page@free=\dimen303
+\premulticols=\dimen304
+\postmulticols=\dimen305
+\multicolsep=\skip63
+\multicolbaselineskip=\skip64
+\partial@page=\box82
+\last@line=\box83
+\maxbalancingoverflow=\dimen306
+\mult@rightbox=\box84
+\mult@grightbox=\box85
+\mult@firstbox=\box86
+\mult@gfirstbox=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\c@minrows=\count361
+\c@columnbadness=\count362
+\c@finalcolumnbadness=\count363
+\last@try=\dimen307
+\multicolovershoot=\dimen308
+\multicolundershoot=\dimen309
+\mult@nat@firstbox=\box124
+\colbreak@box=\box125
+\mc@col@check@num=\count364
 )
 Package hyperref Info: Option `colorlinks' set `false' on input line 26.
 
@@ -909,9 +957,6 @@ runsystem(rm report.aex)...executed.
 
  (./report.aux
 
-LaTeX Warning: Label `fig:training' multiply defined.
-
-
 LaTeX Warning: Label `fig:featuremaps' multiply defined.
 
 
@@ -976,165 +1021,37 @@ Package hyperref Info: Link coloring OFF on input line 55.
 * \topskip=10.0pt
 * \footskip=30.0pt
 * \marginparwidth=5.05942pt
-* \marginparsep=10.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumntrue
+* \@twocolumnfalse
 * \@twosidetrue
 * \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-CUTED [- LAST -]
-Extra skip:0.0pt
-Left:0.0pt/0.0pt
-Right:0.0pt/0.0pt
-Split: 0.0pt
-Output:0.0pt
-Pageshrink: 0.0pt
-Pagestretch: 0.0pt
-@colht:681.15898pt
-CUTED [output]: 0.0pt
-CUTED [leftcolumn badness]: 0
-CUTED [rightcolumn badness]: 0
 File: training.png Graphic file (type bmp)
 <training.png>
-
-./report.tex:103: LaTeX Error: \begin{figure*} on input line 98 ended by \end{f
-igure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.103 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 104.
-
-File: training_only_freeze_conv.png Graphic file (type bmp)
-<training_only_freeze_conv.png>
-
-./report.tex:109: LaTeX Error: \begin{figure*} on input line 104 ended by \end{
-figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 [1
 
 ]
 File: original-image.png Graphic file (type bmp)
 <original-image.png>
-
-
-./report.tex:120: LaTeX Error: \begin{figure*} on input line 115 ended by \end{
-figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.120 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 File: featuremaps.png Graphic file (type bmp)
 <featuremaps.png>
+ [2
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-./report.tex:126: LaTeX Error: \begin{figure*} on input line 121 ended by \end{
-figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.126 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+]
 File: best_worst_first_class.png Graphic file (type bmp)
 <best_worst_first_class.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-./report.tex:133: LaTeX Error: \begin{figure*} on input line 128 ended by \end{
-figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.133 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 File: best_worst_second_class.png Graphic file (type bmp)
 <best_worst_second_class.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-./report.tex:141: LaTeX Error: \begin{figure*} on input line 136 ended by \end{
-figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.141 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 File: best_worst_sixth_class.png Graphic file (type bmp)
 <best_worst_sixth_class.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-./report.tex:149: LaTeX Error: \begin{figure*} on input line 144 ended by \end{
-figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.149 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[2
-
-] [3
+ [3
 
 ] (./report.aux)
 
@@ -1144,12 +1061,12 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26324 strings out of 478682
- 539721 string characters out of 5849665
+ 26366 strings out of 478682
+ 540170 string characters out of 5849665
  1851018 words of memory out of 5000000
- 46001 multiletter control sequences out of 15000+600000
+ 46045 multiletter control sequences out of 15000+600000
  515741 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 87i,5n,119p,448b,356s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,5n,119p,448b,358s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on report.pdf (3 pages).

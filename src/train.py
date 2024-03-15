@@ -93,5 +93,5 @@ ax[1].set_xlabel("Epoch")
 ax[1].set_ylabel("Accuracy")
 ax[1].legend()
 
-plt.savefig("../training_only_freeze_conv.png", dpi=150, bbox_inches="tight")
+plt.savefig("../training.png", dpi=150, bbox_inches="tight")
 # plt.show()
